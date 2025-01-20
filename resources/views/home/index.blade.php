@@ -15,7 +15,7 @@
     <main class="ml-0 p-6">
         <div class="flex justify-between items-center p-16 mb-4">
     
-            <a href="{{ route('dashboard') }}" class="text-green-500 hover:text-green-700 font-semibold">
+            <a href="{{ route('dashboard') }}" class="text-blue-500 hover:text-blue-700 font-semibold underline">
                 Back to Dashboard
             </a>
             <h1 class="text-xl font-semibold text-gray-800 border border-green-500 px-3 py-2 rounded">

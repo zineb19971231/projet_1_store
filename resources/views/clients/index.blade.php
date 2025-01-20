@@ -10,8 +10,8 @@
 </head>
 
 <body class="bg-gray-100 font-sans antialiased">
-    @extends('layouts.admin');
-    @section('content');
+    {{-- @extends('layouts.admin');
+    @section('content'); --}}
     <div class="container mx-auto px-6 py-10">
         <!-- Nombre de Clients Section -->
         <div class="max-w-3xl mx-auto p-6 bg-green-700 text-white rounded-lg shadow-lg mt-10 mb-8">
@@ -68,7 +68,7 @@
             </table>
         </div>
     </div>
-    @endsection
+    {{-- @endsection --}}
 
 </body>
 

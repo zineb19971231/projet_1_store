@@ -11,22 +11,30 @@
 </head>
 
 <body class="bg-gray-100 font-sans text-gray-900">
-    @extends('layouts.admin');
-    @section('content')
-
     <div class="container mx-auto p-8">
-        <div class="max-w-3xl mx-auto p-6 bg-green-700 text-white rounded-lg shadow-lg mt-10 mb-8">
-            <h2 class="text-2xl font-semibold">Nombre de Categories : <span class="text-gray-200">{{ count($categories) }}</span></h2>
+        <!-- Lien Back to Dashboard -->
+        <div class="w-full flex flex-col justify-start items-start mb-6">
+            <a href="{{ route('dashboard') }}" class="text-blue-500 hover:text-blue-700 font-semibold mb-4 underline">
+                Back to Dashboard
+            </a>
         </div>
-        <!-- Create Category Button -->
+    
+        <!-- Section du titre Liste des catégories -->
+        <div class="max-w-3xl mx-auto p-6 bg-green-700 text-white rounded-lg shadow-lg mt-10 mb-8 text-align-center">
+            <h2 class="text-2xl font-semibold">Liste des catégories</h2>
+        </div>
+    
+        <!-- Bouton Ajouter une nouvelle catégorie -->
         <div class="mb-8 flex justify-center">
             <a href="{{ route('categories.create') }}" class="inline-block bg-green-700 text-white py-2 px-6 rounded-lg shadow-lg hover:bg-green-500 transition duration-300 transform hover:scale-105">
                 Ajouter une nouvelle catégorie
             </a>
         </div>
+    </div>
+    
 
         <!-- Title -->
-        <h1 class="text-3xl font-semibold text-center text-green-700 mb-6">Liste des catégories</h1>
+        <h1 class="text-1xl font-semibold text-center text-green-700 mb-6">Nombre de Categories : <span class="text-green-700">{{ count($categories) }}</span></h1>
        
         <!-- Table -->
         <div class="overflow-x-auto bg-white rounded-lg shadow-md">
@@ -82,7 +90,7 @@
                       }
                                  }
     </script>
-@endsection
+{{-- @endsection --}}
 </body>
 
 </html>

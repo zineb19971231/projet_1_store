@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Order List</title>
 </head>
-@extends('layouts.admin');
-@section('content');
+{{-- @extends('layouts.admin');
+@section('content'); --}}
 <body class="bg-gray-100 font-sans">
 
     <div class="max-w-7xl mx-auto py-10 px-5">
@@ -48,6 +48,6 @@
             </table>
         </div>
     </div>
-@endsection;
+{{-- @endsection; --}}
 </body>
 </html>
