@@ -79,6 +79,7 @@
                                 <a href="{{ route('produits.edit', $item->id) }}" class="text-yellow-600 hover:text-yellow-800">Modifier</a>
                             </td>
                             <td class="px-4 py-2 border-b">
+                                
                                 <form action="{{route('produits.destroy',$item->id)}}" method="post">
                                     @method('DELETE')
                                     @csrf
